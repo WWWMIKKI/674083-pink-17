@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Александр Агарков](https://up.htmlacademy.ru/adaptive/17/user/674083).
-* Наставник: `Неизвестно`.
+* Студент: [Сергей Попенко](https://up.htmlacademy.ru/adaptive/17/user/66243).
 
 ---
 
