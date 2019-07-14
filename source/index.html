@@ -2,11 +2,168 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Пинк</title>
+    <title>Pink</title>
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS, уровень 2</a>».</p>
-
+    <header class="page-header">
+      <a class="page-header__logo" href="index.html">
+        <img class="page-header__logo-image" src="img/logo.svg" width="75px" height="22px" alt="Логотип Pink">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-list" >
+            <li class="site-list__item"><a class="site-list__link" href="index.html">главная</a></li>
+            <li class="site-list__item"><a class="site-list__link" href="foto.html">фотографии</a></li>
+            <li class="site-list__item"><a class="site-list__link" href="form.html">конкурс</a></li>
+            <li class="site-list__item"><a class="site-list__link" href="https://htmlacademy.ru/">html academy</a></li>
+          </ul>
+          <ul class="main-nav__list user-list" >
+            <li class="user-list__item"><a class="user-list__login" href="#">Вход</a></li>
+            <li class="user-list__item"><a class="user-list__registration" href="#">Регистрация</a></li>
+          </ul>
+        </div>
+      </nav>
+      <section class="download">
+        <h2 class="download__application button"><a class="button__link" href="#">Скачать приложение</a></h2>
+        <ul class="download__list application-list">
+          <li class="application-list__item"><a class="appplication-list__link appplication-list__link--IOS" href="#"><span>IOS</span></a></li>
+          <li class="application-list__item"><a class="appplication-list__link appplication-list__link--android" href="#"><span>Android</span></a></li>
+          <li class="application-list__item"><a class="appplication-list__link appplication-list__link--windows" href="#"><span>Windows</span></a></li>
+        </ul>
+        <p class="download__info">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+      </section>
+    </header>
+    <main class="page-main">
+      <h1 class="visually-hidden" >Приложение Pink</h1>
+      <section class="advantages">
+        <b class="advantages__promo">Устали от серости мегаполиса? Нам есть, что вам предложить!</b>
+        <ul class="advantages__list">
+          <li class="advantages__item">
+            <h2 class="advantages__name">Поднимает настроение</h2>
+            <p class="advantages__info">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+          </li>
+          <li class="advantages__item">
+            <h2 class="advantages__name">Меняет мир вокруг</h2>
+            <p class="advantages__info">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+          </li>
+          <li class="advantages__item">
+            <h2 class="advantages__name">Заводит новых друзей</h2>
+            <p class="advantages__info">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+          </li>
+        </ul>
+      </section>
+      <section class="reviews">
+        <img class="reviews-image" src="img/scr.jpg" width="157px" height="320px" alt="Скриншот приложения">
+        <div class="reviews__wrapper slider">
+          <h2 class="visually-hidden">Отзывы</h2>
+          <ul class="reviews__list slider-list">
+            <li class="reviews__item slider__item">
+              <h3 class="reviews__title">Николай Петров</h3>
+              <p class="reviews__info">&laquo;Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!&raquo;</p>
+            </li>
+            <li class="reviews__item slider__item">
+              <h3 class="reviews__title"></h3>
+              <p class="reviews__info"></p>
+            </li>
+            <li class="reviews__item slider__item">
+              <h3 class="reviews__title"></h3>
+              <p class="reviews__info"></p>
+            </li>
+          </ul>
+          <p class="reviews__toggles slider__toggles">
+            <button class="slider__toggles" type="button">1</button>
+            <button class="slider__toggles" type="button">2</button>
+            <button class="slider__toggles" type="button">3</button>
+          </p>
+        </div>
+      </section>
+      <section class="price">
+        <h2 class="visually-hidden">Цены</h2>
+        <div class="price__wrapper slider">
+          <ul class="price__list slider__list">
+            <ul class="price__item slider__item slider__standart">
+              <li class="price__info slider__info">
+                <h3 class="price__title slider__title">Стандарт</h3>
+                <p class="price__usd slider__usd"> 3.99 usd</p>
+              </li>
+              <li class="price__servise slider__servise">
+                <p class="price__filtr slider__filtr">розовый фильтр</p>
+                <span class="price__on slider__on">влючено</span>
+              </li>
+              <li class="price__servise slider__servise">
+                <p class="price__smail slider__smail">смайлики</p>
+                <span class="price__on slider__on">включено</span>
+              </li>
+              <li class="price__servise slider__servise">
+                <p class="price__comment slider__comment">комментарии</p>
+                <span class="price__off slider__off">отключено</span>
+              </li>
+            </ul>
+            <ul class="price__item slider__item slider__item--baza">
+              <li class="price__info slider__info">
+                <h3 class="price__title slider__title">База</h3>
+                <p class="price__usd slider__usd">0.99 usd</p>
+              </li>
+              <li class="price__servise slider__servise">
+                <p class="price__filtr slider__filtr">розовый фильтр</p>
+                <span class="price__on slider__on">включено</span>
+              </li>
+              <li class="price__servise slider__servise">
+                <p class="price__smail slider__smail">смайлики</p>
+                <span class="price__off slider__off">отключено</span>
+              </li>
+              <li >
+                <p class="price__comment slider__comment">комментарии</p>
+                <span class="price__off slider__off">отключено</span>
+              </li>
+            </ul>
+            <ul class="price__item slider__item slider__item--unlimited">
+              <li class="price__info slider__info">
+                <h3 class="price__title slider__title">Анлим</h3>
+                <p class="price__usd slider__usd">9.99 usd</p>
+              </li>
+              <li>
+                <p class="price__filtr slider__filtr">розовый фильтр</p>
+                <span class="price__on slider__on">включено</span>
+              </li>
+              <li>
+                <p class="price__smail slider__smail">смайлики</p>
+                <span class="price__on slider__on">включено</span>
+              </li>
+              <li>
+                <p class="price__comment slider__comment">комментарии</p>
+                <span class="price__on slider__on">включено</span>
+              </li>
+            </ul>
+          </ul>
+          <p class="reviews__toggles slider__toggles">
+            <button class="slider__toggles" type="button">1</button>
+            <button class="slider__toggles" type="button">2</button>
+            <button class="slider__toggles" type="button">3</button>
+          </p>
+        </div>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <section class="page-footer__contact contact">
+        <h2 class="visually hidden">Контакты</h2>
+        <b class="contact__promo">Остались вопросы? Свяжитесь с нами!</b>
+        <ul class="contact__list">
+          <li class="contact__item">
+            <h3 class="contact__title">Звоните:</h3>
+            <a class="contact__phone" href="tel:+78125556666">+7 (812) 555-66-66</a>
+          </li>
+          <li class="contact__item">
+            <h3 class="contact__title">Пишите:</h3>
+            <a href="mail@htmlacademy.ru" class="contact__mail">mail@htmlacademy.ru</a>
+          </li>
+          <li class="contact__item">
+            <h3 class="contact__title">Приезжайте в гости:</h3>
+            <a href="#" class="contact__adres">ул. Большая Конюшенная, 19/8</a>
+          </li>
+        </ul>
+      </section>
+    </footer>
   </body>
 </html>
