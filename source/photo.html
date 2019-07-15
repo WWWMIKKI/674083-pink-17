@@ -118,14 +118,17 @@
           </p>
           <div class="editor-photo__settings">
             <div class="editor-photo__cadre">
-              <input class="editor-photo__filter" type="radio" name="filter" value="cadre" checked>
+              <label class="editor-photo__label" for="cadre">Рамка</label>
+              <input class="editor-photo__filter" type="radio" name="filter" value="cadre" id="cadre" checked>
             </div>
             <div class="editor-photo__color">
-              <input class="editor-photo__filter" type="radio" name="filter" value="color">
+              <label class="editor-photo__label" for="color">Цвет</label>
+              <input class="editor-photo__filter" type="radio" name="filter" value="color" id="color">
             </div>
             <div class="editor-photo__light">
-              <input class="editor-photo__filter" type="radio" name="filter" value="light">
-            </div>
+              <label class="editor-photo__label" for="light">Свет</label>
+              <input class="editor-photo__filter" type="radio" name="filter" value="light" id="light">
+             </div>
             <div class="editor-photo__controls">
               <input class="editor-photo__range" type="range" min="0" max="100" step="1" value="50">
             </div>
