@@ -14,7 +14,7 @@
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list" >
             <li class="site-list__item"><a class="site-list__link" href="index.html">главная</a></li>
-            <li class="site-list__item"><a class="site-list__link" href="foto.html">фотографии</a></li>
+            <li class="site-list__item"><a class="site-list__link" href="photo.html">фотографии</a></li>
             <li class="site-list__item"><a class="site-list__link" href="form.html">конкурс</a></li>
             <li class="site-list__item"><a class="site-list__link" href="https://htmlacademy.ru/">html academy</a></li>
           </ul>
@@ -27,7 +27,7 @@
       <section class="download">
         <h2 class="download__application button"><a class="button__link" href="#">Скачать приложение</a></h2>
         <ul class="download__list application-list">
-          <li class="application-list__item"><a class="appplication-list__link appplication-list__link--IOS" href="#"><span>IOS</span></a></li>
+          <li class="application-list__item"><a class="appplication-list__link appplication-list__link--ios" href="#"><span>IOS</span></a></li>
           <li class="application-list__item"><a class="appplication-list__link appplication-list__link--android" href="#"><span>Android</span></a></li>
           <li class="application-list__item"><a class="appplication-list__link appplication-list__link--windows" href="#"><span>Windows</span></a></li>
         </ul>
@@ -37,7 +37,8 @@
     <main class="page-main">
       <h1 class="visually-hidden" >Приложение Pink</h1>
       <section class="advantages">
-        <b class="advantages__promo">Устали от серости мегаполиса? Нам есть, что вам предложить!</b>
+        <strong class="advantages__promo">Устали от серости мегаполиса?</strong>
+        <strong class="advantages__promo"> Нам есть, что вам предложить!</strong>
         <ul class="advantages__list">
           <li class="advantages__item">
             <h2 class="advantages__name">Поднимает настроение</h2>
@@ -54,7 +55,6 @@
         </ul>
       </section>
       <section class="reviews">
-        <img class="reviews-image" src="img/scr.jpg" width="157px" height="320px" alt="Скриншот приложения">
         <div class="reviews__wrapper slider">
           <h2 class="visually-hidden">Отзывы</h2>
           <ul class="reviews__list slider-list">
@@ -71,6 +71,9 @@
               <p class="reviews__info"></p>
             </li>
           </ul>
+          <p class="reviews-screenshot">
+            <img class="reviews-screenshot__image" src="img/scr.jpg" width="157px" height="320px" alt="Скриншот приложения">
+          </p>
           <p class="reviews__toggles slider__toggles">
             <button class="slider__toggles" type="button">1</button>
             <button class="slider__toggles" type="button">2</button>
@@ -81,62 +84,42 @@
       <section class="price">
         <h2 class="visually-hidden">Цены</h2>
         <div class="price__wrapper slider">
-          <ul class="price__list slider__list">
-            <ul class="price__item slider__item slider__standart">
-              <li class="price__info slider__info">
-                <h3 class="price__title slider__title">Стандарт</h3>
-                <p class="price__usd slider__usd"> 3.99 usd</p>
-              </li>
-              <li class="price__servise slider__servise">
-                <p class="price__filtr slider__filtr">розовый фильтр</p>
-                <span class="price__on slider__on">влючено</span>
-              </li>
-              <li class="price__servise slider__servise">
-                <p class="price__smail slider__smail">смайлики</p>
-                <span class="price__on slider__on">включено</span>
-              </li>
-              <li class="price__servise slider__servise">
-                <p class="price__comment slider__comment">комментарии</p>
-                <span class="price__off slider__off">отключено</span>
-              </li>
-            </ul>
-            <ul class="price__item slider__item slider__item--baza">
-              <li class="price__info slider__info">
-                <h3 class="price__title slider__title">База</h3>
-                <p class="price__usd slider__usd">0.99 usd</p>
-              </li>
-              <li class="price__servise slider__servise">
-                <p class="price__filtr slider__filtr">розовый фильтр</p>
-                <span class="price__on slider__on">включено</span>
-              </li>
-              <li class="price__servise slider__servise">
-                <p class="price__smail slider__smail">смайлики</p>
-                <span class="price__off slider__off">отключено</span>
-              </li>
-              <li >
-                <p class="price__comment slider__comment">комментарии</p>
-                <span class="price__off slider__off">отключено</span>
-              </li>
-            </ul>
-            <ul class="price__item slider__item slider__item--unlimited">
-              <li class="price__info slider__info">
-                <h3 class="price__title slider__title">Анлим</h3>
-                <p class="price__usd slider__usd">9.99 usd</p>
-              </li>
-              <li>
-                <p class="price__filtr slider__filtr">розовый фильтр</p>
-                <span class="price__on slider__on">включено</span>
-              </li>
-              <li>
-                <p class="price__smail slider__smail">смайлики</p>
-                <span class="price__on slider__on">включено</span>
-              </li>
-              <li>
-                <p class="price__comment slider__comment">комментарии</p>
-                <span class="price__on slider__on">включено</span>
-              </li>
-            </ul>
-          </ul>
+          <table class="price__list slider__list">
+            <tr>
+              <th class="price__item slider__item" colspan="2">база</th>
+              <th class="price__item slider__item" colspan="2">стандарт</th>
+              <th class="price__item slider__item" colspan="2">анлим</th>
+            </tr>
+            <tr>
+              <th class="price__usd slider__usd" colspan="2">1.99 usd</th>
+              <th class="price__usd slider__usd" colspan="2">3.99 usd</th>
+              <th class="price__usd slider__usd" colspan="2">9.99 usd</th>
+            </tr>
+            <tr>
+              <td class="price__filter slider__filter">розовый фильтр</td>
+              <td class="price__on slider__on visually-hidden">включено</td>
+              <td class="price__filter slider__filter">розовый фильтр</td>
+              <td class="price__on slider__on visually-hidden">включено</td>
+              <td class="price__filter slider__filter">розовый фильтр</td>
+              <td class="price__on slider__on visually-hidden">включено</td>
+            </tr>
+            <tr>
+              <td class="price__smail slider__smail">смайлики</td>
+              <td class="price__off slider__off visually-hidden">отключено</td>
+              <td class="price__smail slider__smail">смайлики</td>
+              <td class="price__on slider__on visually-hidden">включено</td>
+              <td class="price__smail slider__smail">смайлики</td>
+              <td class="price__on slider__on visually-hidden">включено</td>
+            </tr>
+            <tr>
+              <td class="price__comment slider__commet">комментарии</td>
+              <td class="price__off slider__off visually-hidden">отключено</td>
+              <td class="price__comment slider__commet">комментарии</td>
+              <td class="price__off slider__off visually-hidden">отключено</td>
+              <td class="price__comment slider__commet">комментарии</td>
+              <td class="price__on slider__on visually-hidden">включено</td>
+            </tr>
+          </table>
           <p class="reviews__toggles slider__toggles">
             <button class="slider__toggles" type="button">1</button>
             <button class="slider__toggles" type="button">2</button>
@@ -148,21 +131,27 @@
     <footer class="page-footer">
       <section class="page-footer__contact contact">
         <h2 class="visually hidden">Контакты</h2>
-        <b class="contact__promo">Остались вопросы? Свяжитесь с нами!</b>
+        <strong class="contact__promo">Остались вопросы? Свяжитесь с нами!</strong>
         <ul class="contact__list">
           <li class="contact__item">
             <h3 class="contact__title">Звоните:</h3>
-            <a class="contact__phone" href="tel:+78125556666">+7 (812) 555-66-66</a>
+            <a class="contact__info" href="tel:+78125556666">+7 (812) 555-66-66</a>
           </li>
           <li class="contact__item">
             <h3 class="contact__title">Пишите:</h3>
-            <a href="mail@htmlacademy.ru" class="contact__mail">mail@htmlacademy.ru</a>
+            <a href="mail@htmlacademy.ru" class="contact__info">mail@htmlacademy.ru</a>
           </li>
           <li class="contact__item">
             <h3 class="contact__title">Приезжайте в гости:</h3>
             <a href="#" class="contact__adres">ул. Большая Конюшенная, 19/8</a>
           </li>
         </ul>
+      </section>
+      <section class="maps">
+        <h2 class="visually hidden">Карта</h2>
+        <p class="maps__wrapper">
+          <img class="maps__image" src="img/maps.jpg" alt="Схема проезда" width="320px" height="645px">
+        </p>
       </section>
     </footer>
   </body>
