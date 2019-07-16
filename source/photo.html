@@ -107,39 +107,36 @@
           </ul>
         </section>
       </section>
-      <section class="create-post">
+      <form class="editor-photo" action="https://echo.htmlacademy.ru" method="POST" >
         <h2 class="visually hidden">Создать пост</h2>
-        <strong class="create-post__promo" >Затмите их всех! Выкладывайте все, что накопилось в телефоне!</strong>
-        <img src="img/foto8" width="180px" height="280"  alt="зима">
-        <section class="editor-photo">
-          <h2 class="visually hidden">Редактирование фотографий</h2>
-          <p class="editor-photo__image-wrapper">
-            <img class="editor-photo_image" src="img/photo-main" alt="моя фоторафия" width="280px" height="374px">
-          </p>
-          <div class="editor-photo__settings">
-            <div class="editor-photo__cadre">
-              <label class="editor-photo__label" for="cadre">Рамка</label>
-              <input class="editor-photo__filter" type="radio" name="filter" value="cadre" id="cadre" checked>
-            </div>
-            <div class="editor-photo__color">
-              <label class="editor-photo__label" for="color">Цвет</label>
-              <input class="editor-photo__filter" type="radio" name="filter" value="color" id="color">
-            </div>
-            <div class="editor-photo__light">
-              <label class="editor-photo__label" for="light">Свет</label>
-              <input class="editor-photo__filter" type="radio" name="filter" value="light" id="light">
-             </div>
-            <div class="editor-photo__controls">
-              <input class="editor-photo__range" type="range" min="0" max="100" step="1" value="50">
-            </div>
+        <strong class="editor-photo__promo" >Затмите их всех! Выкладывайте все, что накопилось в телефоне!</strong>
+        <div class="editor-photo__image-wrapper">
+          <img class="editor-photo_image" src="img/photo-main" alt="моя фоторафия" width="280px" height="374px">
+        </div>
+        <div class="editor-photo__settings">
+          <label class="editor-photo__label" for="cadre"><span class="visually hidden">Рамка</span></label>
+          <input class="editor-photo__filter" type="radio" name="filter" value="cadre" id="cadre" checked>
+          <label class="editor-photo__label" for="color"><span class="visually hidden">Цвет</span></label>
+          <input class="editor-photo__filter" type="radio" name="filter" value="color" id="color">
+          <label class="editor-photo__label" for="light"><span class="visually hidden">Свет</span></label>
+          <input class="editor-photo__filter" type="radio" name="filter" value="light" id="light">
+        </div>
+        <div class="editor-photo__controls">
+          <div class="editor-photo__range-wrapper">
+            <input class="editor-photo__range" type="range" name="range-editor" id="range-editor-1" min="0" max="100" step="1" value="50">
           </div>
-          <div class="editor-photo__button-wrapper">
-            <button class="editor-photo__button editor-photo__button--active" type="submit">Запостить</button>
-            <button class="editor-photo__button editor-photo__button--active" type="reset">Отмена</button>
+          <div class="editor-photo__range-wrapper">
+            <input class="editor-photo__range" type="range" name="range-editor" id="range-editor-2" min="0" max="100" step="1" value="50">
           </div>
-          </form>
-        </section>
-      </section>
+          <div class="editor-photo__range-wrapper">
+            <input class="editor-photo__range" type="range" name="range-editor" id="range-editor-3" min="0" max="100" step="1" value="50">
+          </div>
+        </div>
+        <div class="editor-photo__button-wrapper">
+          <input class="editor-photo__button editor-photo__button--active" id="submit__batton" type="submit" value="Запостить">
+          <input class="editor-photo__button editor-photo__button--active" id="reset__batton" type="reset" value="Отмена">
+        </div>
+      </form>
     </main>
     <footer class="form-footer">
       <a class="form-footer__logo" href="index.html">
@@ -162,8 +159,8 @@
       <section class="form-footer__developer developer">
         <h2 class="visually-hidden">Разработчики сайта</h2>
         <p class="form-footer__developer-info developer__info">Разработано</p>
-        <a class="form-footer__developer-link developer__link" href="https://htmlacademy.ru/">
-          <span class="visually hidden">https://htmlacademy.ru/</span>
+        <a class="form-footer__developer-link developer__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <span class="visually hidden">https://htmlacademy.ru/intensive/adaptive</span>
         </a>
       </section>
     </footer>
