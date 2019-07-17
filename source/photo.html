@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Pink-foto</title>
+  </head>
+  <body>
+    <header class="page-header">
+      <a class="page-header__logo" href="#">
+        <img class="page-header__logo-image" src="img/logo.svg" width="75px" height="22px" alt="Логотип Pink">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-list" >
+            <li class="site-list__item"><a class="site-list__link" href="index.html">главная</a></li>
+            <li class="site-list__item"><a class="site-list__link" href="photo.html">фотографии</a></li>
+            <li class="site-list__item"><a class="site-list__link" href="form.html">конкурс</a></li>
+            <li class="site-list__item"><a class="site-list__link" href="https://htmlacademy.ru/">html academy</a></li>
+          </ul>
+          <ul class="main-nav__list user-list" >
+            <li class="user-list__item"><a class="user-list__login" href="#">Вход</a></li>
+            <li class="user-list__item"><a class="user-list__registration" href="#">Регистрация</a></li>
+          </ul>
+        </div>
+      </nav>
+      <section class="foto-promo">
+        <h1 class="foto-info">Фотографии пользователей</b>
+      </section>
+    </header>
+    <main class="photo-main">
+      <section class="lenta-photo">
+        <strong class="lenta-photo__promo">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</strong>
+        <h2 class="visually hidden">Лента фотографий пользователей</h2>
+        <section class="post">
+          <ul class="post__list">
+            <li class="post__item post__item--top">
+              <p class="post__image-wrapper">
+                <img class="post__image" src="img/foto1" width="180px" height="280px" alt="панорама">
+              </p>
+              <p class="post__avtor">Анна <span class="lenta-photo__data post__data">(5 минут назад)</span></p>
+              <p class="post__description">
+                Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!
+              </p>
+              <a class="post__like" href="#">нравится:<span class="post__like-sсore">215</span></a>
+            </li>
+            <li class="post__item">
+              <p class="post__image-wrapper">
+                <img class="post__image" src="img/foto2" width="180px" height="280px" alt="авто">
+              </p>
+              <p class="post__avtor">Левон<span class="lenta-photo__data post__data">(5 часов назад)</span></p>
+              <p class="post__description">
+                Вчера он на луну летал, сегодня в руки к нам попал.
+              </p>
+              <a class="post__like" href="#">нравится:<span class="post__like-sсore">356</span></a>
+            </li>
+            <li class="post__item">
+              <p class="post__image-wrapper">
+                <img class="post__image" src="img/foto3" width="180px" height="280px" alt="барабаны">
+              </p>
+              <p class="post__avtor">Антон<span class="lenta-photo__data post__data">(12 часов назад)</span></p>
+              <p class="post__description">
+                Соседи будут рады!
+              </p>
+              <a class="post__like" href="#">нравится:<span class="post__like-sсore">666</span></a>
+            </li>
+            <li class="post__item">
+              <p class="post__image-wrapper">
+                <img class="post__image" src="img/foto4" width="180px" height="280px" alt="небо">
+              </p>
+              <p class="post__avtor">Борис<span class="lenta-photo__data post__data">(20 часов назад)</span></p>
+              <p class="post__description">
+                Здесь могла быть ваша цитата о высоком и вечном.
+              </p>
+              <a class="post__like" href="#">нравится:<span class="post__like-sсore">215</span></a>
+            </li>
+            <li class="post__item">
+              <p class="post__image-wrapper">
+                <img class="post__image" src="img/foto5" width="180px" height="280px" alt="Бахча">
+              </p>
+              <p class="post__avtor">Сергей<span class="lenta-photo__data post__data">(25 часов назад)</span></p>
+              <p class="post__description">
+                Самая кубанская в мире!
+              </p>
+              <a class="post__like" href="#">нравится:<span class="post__like-sсore">4</span></a>
+            </li>
+            <li class="post__item">
+              <p class="post__image-wrapper">
+                <img class="post__image" src="img/foto6" width="180px" height="280px" alt="горы">
+              </p>
+              <p class="post__avtor">Максим<span class="lenta-photo__data post__data">(40 часов назад)</span></p>
+              <p class="post__description">
+                Где снег-то?
+              </p>
+              <a class="post__like" href="#">нравится:<span class="post__like-sсore">150</span></a>
+            </li>
+            <li class="post__item">
+              <p class="post__image-wrapper">
+                <img class="post__image" src="img/foto7" width="180px" height="280px" alt="авиа">
+              </p>
+              <p class="post__avtor">Надежда<span class="lenta-photo__data post__data">(45 часов назад)</span></p>
+              <p class="post__description">
+                Всем GM и взаимные лайки!
+              </p>
+              <a class="post__like" href="#">нравится:<span class="post__like-sсore">2560</span></a>
+            </li>
+          </ul>
+        </section>
+      </section>
+      <form class="editor-photo" action="https://echo.htmlacademy.ru" method="POST" >
+        <h2 class="visually hidden">Создать пост</h2>
+        <strong class="editor-photo__promo" >Затмите их всех! Выкладывайте все, что накопилось в телефоне!</strong>
+        <div class="editor-photo__image-wrapper">
+          <img class="editor-photo_image" src="img/photo-main" alt="моя фоторафия" width="280px" height="374px">
+        </div>
+        <div class="editor-photo__settings">
+          <label class="editor-photo__label" for="cadre"><span class="visually hidden">Рамка</span></label>
+          <input class="editor-photo__filter" type="radio" name="filter" value="cadre" id="cadre" checked>
+          <label class="editor-photo__label" for="color"><span class="visually hidden">Цвет</span></label>
+          <input class="editor-photo__filter" type="radio" name="filter" value="color" id="color">
+          <label class="editor-photo__label" for="light"><span class="visually hidden">Свет</span></label>
+          <input class="editor-photo__filter" type="radio" name="filter" value="light" id="light">
+        </div>
+        <div class="editor-photo__controls">
+          <div class="editor-photo__range-wrapper">
+            <input class="editor-photo__range" type="range" name="range-editor" id="range-editor-1" min="0" max="100" step="1" value="50">
+          </div>
+          <div class="editor-photo__range-wrapper">
+            <input class="editor-photo__range" type="range" name="range-editor" id="range-editor-2" min="0" max="100" step="1" value="50">
+          </div>
+          <div class="editor-photo__range-wrapper">
+            <input class="editor-photo__range" type="range" name="range-editor" id="range-editor-3" min="0" max="100" step="1" value="50">
+          </div>
+        </div>
+        <div class="editor-photo__button-wrapper">
+          <input class="editor-photo__button editor-photo__button--active" id="submit__batton" type="submit" value="Запостить">
+          <input class="editor-photo__button editor-photo__button--active" id="reset__batton" type="reset" value="Отмена">
+        </div>
+      </form>
+    </main>
+    <footer class="form-footer">
+      <a class="form-footer__logo" href="index.html">
+        <img class="form-footer__logo-image" src="img/logofull.cvg" alt="Логотип Pink" width="147px" height="40px">
+      </a>
+      <section class="form-footer__info form-footer__platform ">
+        <h2 class="visually-hidden">Информация о компании</h2>
+        <ul class="form-footer__list form-footer__platform-list">
+          <li class="form-footer__item form-footer__platform-item">
+            <a class="form-footer__link form-footer--twitter" href="#"><span class="visually-hidden">twitter</span></a>
+          </li>
+          <li class="form-footer__item form-footer__platform-item">
+            <a class="form-footer__link form-footer--facebook" href="#"><span class="visually-hidden">facebook</span></a>
+          </li>
+          <li class="form-footer__item form-footer__platform-item">
+            <a class="form-footer__link form-footer--youtube"href="#"><span class="visually-hidden">youtube</span></a>
+          </li>
+        </ul>
+      </section>
+      <section class="form-footer__developer developer">
+        <h2 class="visually-hidden">Разработчики сайта</h2>
+        <p class="form-footer__developer-info developer__info">Разработано</p>
+        <a class="form-footer__developer-link developer__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <span class="visually hidden">https://htmlacademy.ru/intensive/adaptive</span>
+        </a>
+      </section>
+    </footer>
