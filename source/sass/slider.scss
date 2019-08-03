@@ -1,0 +1,43 @@
+.slider-list {
+  list-style: none;
+  margin: 0 0;
+  padding: 0 0;
+  background-color: #ffffff;
+  color: #283645;
+}
+
+.slider {
+  padding-top: 260px;
+}
+
+.slider__title {
+  font-family: "OpenSans", "Arial Black", sans-serif;
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: 700;
+  color: #000000;
+  background-color: #ffffff;
+  text-align: center;
+  padding-top: 45px;
+  padding-bottom: 15px;
+  margin: 0 0;
+}
+
+.slider__info {
+  margin: 0 0;
+  padding: 0 0;
+  font-family: "OpenSans", "Arial Black", sans-serif;
+  font-size: 14px;
+  line-height: 30px;
+  color: #283645;
+  background-color: #ffffff;
+  font-weight: 400;
+  text-align: center;
+}
+
+.slider__toggles {
+  display: block;
+  margin: 0 0;
+  padding: 0 0;
+  background-color: #ffffff;
+}
