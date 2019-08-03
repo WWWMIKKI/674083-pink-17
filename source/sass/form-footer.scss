@@ -1,0 +1,44 @@
+.form-footer {
+  width: 320px;
+  background-color: #ffffff;
+  color: #283645;
+  padding-top: 40px;
+}
+
+.form-footer__list {
+  list-style: none;
+  padding: 0 0;
+  margin: 0 0;
+}
+
+.form-footer__logo {
+  display: block;
+  width: 147px;
+  margin-bottom: 40px;
+}
+
+.form-footer__platform-list {
+  list-style: none;
+}
+
+.form-footer__link {
+  display: block;
+  width: 45px;
+  height: 45px;
+  border: 3px solid #e9ebec;
+  border-radius: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.form-footer--twitter {
+  background-image: url("/img/icon-twitter.svg");
+}
+
+.form-footer--facebook {
+  background-image: url("/img/icon-facebook.svg");
+}
+
+.form-footer--youtube {
+  background-image: url("/img/icon-youtube.svg");
+}
